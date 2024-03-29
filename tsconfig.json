@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "moduleDetection": "force",
+    "noUncheckedIndexedAccess": true,
+    "checkJs": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "types": [
+        "@cloudflare/workers-types/2023-07-01"
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".eslintrc.cjs",
+    "next-env.d.ts",
+    "**/*.cjs",
+    "**/*.js",
+    "next.config.mjs"
+  ],
+  "exclude": ["node_modules"]
+}
+
+
